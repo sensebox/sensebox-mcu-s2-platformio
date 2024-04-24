@@ -6,10 +6,26 @@
       "core": "esp32",
       "extra_flags": [
         "-DARDUINO_SENSEBOX_MCU_ESP32S2",
-        "-DARDUINO_USB_CDC_ON_BOOT=1"
+        "-DARDUINO_USB_CDC_ON_BOOT=1",
+        "-DBOARD_HAS_PSRAM",
+        "-DARDUINO_USB_MSC_ON_BOOT=1"
       ],
       "f_cpu": "240000000L",
       "f_flash": "80000000L",
+      "hwids": [
+        [
+          "0x303A",
+          "0x81B8"
+        ],
+        [
+          "0x303A",
+          "0x81B9"
+        ],
+        [
+          "0x303A",
+          "0x81BA"
+        ]
+      ],
       "flash_mode": "qio",
       "mcu": "esp32s2",
       "variant": "sensebox_mcu_esp32s2"
